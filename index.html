@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Slot Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏥 Hospital Slot Booking</h1>
+
+    <!-- Patient Name -->
+    <input type="text" id="patientName" placeholder="Enter Patient Name" required />
+
+    <!-- Specialisation -->
+    <select id="specialisation">
+      <option value="">-- Select Specialisation --</option>
+      <option value="Cardiology">Cardiology</option>
+      <option value="Dermatology">Dermatology</option>
+      <option value="Neurology">Neurology</option>
+    </select>
+
+    <!-- Doctors (filled dynamically) -->
+    <select id="doctor">
+      <option value="">-- Select Doctor --</option>
+    </select>
+
+    <!-- Slots (highlighted dynamically) -->
+    <div id="slots"></div>
+
+    <!-- Book Button -->
+    <button id="bookBtn">Book Slot</button>
+
+    <!-- Confirmation -->
+    <div id="confirmation"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
